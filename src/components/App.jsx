@@ -1,16 +1,28 @@
+import { Section } from './section/section';
+import { ContactForm } from './contactForm/contactForm';
+import { ContactList } from './contactList/contactList';
+import { Filter } from './filter/filter';
+import { useDispatch, useSelector } from 'react-redux';
+import { getContacts} from '../redux/selectors';
+import { useEffect } from 'react';
+import { fetchContacts } from '../redux/operations';
+import "./App.css"
+
 export const App = () => {
+  const dispatch = useDispatch();
+  const contact = useSelector(getContacts);
+
+  useEffect(() =>{
+    dispatch(fetchContacts());
+  }, [dispatch]);
+console.log(contact);
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <div className='phonebook'>
+      <Section title={'Phonebook'} />
+      <ContactForm />
+      <Section title={'Contacts'} />
+      <Filter />
+      <ContactList/>
+      </div>
   );
 };
