@@ -9,5 +9,10 @@
     background-color: rgb(232, 230, 232);
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
+    box-shadow: 
+    0 4px 3px 1px #FCFCFC, 
+    0 6px 8px #D6D7D9, 
+    0 -4px 4px #CECFD1, 
+    0 -6px 4px #FEFEFE, 
+    inset 0 0 3px 3px #CECFD1;
 }

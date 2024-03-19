@@ -1,0 +1,39 @@
+.meniu{
+    
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    width:90vmax;
+    padding: 5px;
+    color: rgba(51, 4, 4, 0.896);
+    background-color: rgba(232, 230, 232, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 3px 1px #FCFCFC, 
+                0 6px 8px #D6D7D9, 
+                0 -4px 4px #CECFD1, 
+                0 -6px 4px #FEFEFE, 
+                inset 0 0 3px 3px #CECFD1;
+
+}
+
+.left-bar{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.right-bar{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+h3.title{
+    margin-top:5px;
+    margin-bottom: 5px;
+}

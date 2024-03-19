@@ -1,0 +1,51 @@
+.inputlogin{
+    padding: 7px;
+    margin-bottom: 5%;
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 2%;
+
+}
+.formlogin{
+margin-top: 7%;
+
+
+}
+.login{
+    display: flex;
+    justify-content: center;
+}
+.titlelogin{
+    text-align: center;
+    margin-bottom: 20%;
+}
+.buttonlogin{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: medium;
+    margin-top: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-bottom: 1px solid rgba(51, 4, 4, 0.3);
+    border-top: 1px solid rgba(51, 4, 4, 0.3);
+
+    /* box-shadow:
+    0 4px 3px 1px #FCFCFC, 
+    0 6px 8px #D6D7D9, 
+    0 -4px 4px #CECFD1, 
+    0 -6px 4px #FEFEFE, 
+    inset 0 0 3px 3px #CECFD1; */
+
+}
+.buttonlogin:hover{
+    color: white;
+    background-color: rgba(51, 4, 4, 0.896)
+}
+.labellogin{
+    margin-left: 4%;
+    margin-bottom: 4%;
+}

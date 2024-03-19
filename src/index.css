@@ -7,6 +7,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(../public/jeshoots-com-pUAM5hPaCRI-unsplash.jpg);
+  background-size:100vmax;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 
 }
 

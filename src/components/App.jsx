@@ -7,6 +7,12 @@ import { getContacts} from '../redux/selectors';
 import { useEffect } from 'react';
 import { fetchContacts } from '../redux/operations';
 import "./App.css"
+import { Link, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import MeniuBar from './MeniuBar/MeniuBar';
+import Container from './container/Container';
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -17,12 +23,22 @@ export const App = () => {
   }, [dispatch]);
 console.log(contact);
   return (
-    <div className='phonebook'>
-      <Section title={'Phonebook'} />
-      <ContactForm />
-      <Section title={'Contacts'} />
-      <Filter />
-      <ContactList/>
-      </div>
+    <>
+    <MeniuBar/>
+    <Container>
+    <Routes>
+      <Route path='/' element = {<Home/>}/>
+      <Route path='/register' element = {<Register/>}/>
+      <Route path='/login' element = {<Login/>}/>
+    </Routes>
+    </Container>
+    </>
+    // <div className='phonebook'>
+    //   <Section title={'Phonebook'} />
+    //   <ContactForm />
+    //   <Section title={'Contacts'} />
+    //   <Filter />
+    //   <ContactList/>
+    //   </div>
   );
 };
