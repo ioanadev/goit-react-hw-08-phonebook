@@ -1,13 +1,13 @@
-import { Section } from './section/section';
-import { ContactForm } from './contactForm/contactForm';
-import { ContactList } from './contactList/contactList';
-import { Filter } from './filter/filter';
+// import { Section } from './section/section';
+// import { ContactForm } from './contactForm/contactForm';
+// import { ContactList } from './contactList/contactList';
+// import { Filter } from './filter/filter';
 import { useDispatch, useSelector } from 'react-redux';
 import { getContacts} from '../redux/selectors';
 import { useEffect } from 'react';
 import { fetchContacts } from '../redux/operations';
 import "./App.css"
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Register from './pages/Register';
 import Login from './pages/Login';
