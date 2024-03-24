@@ -1,10 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
 import './contactList.css';
-import { getError, getIsLoading, selectVisibleContacts } from '../../redux/selectors';
+import { getError, getIsLoading, selectVisibleContacts } from '../../redux/contacts/selectors';
 
-import { deleteContact, fetchContacts } from '../../redux/operations';
+import { deleteContact, fetchContacts } from '../../redux/contacts/operations';
 import { useEffect } from 'react';
 import { CircleLoader } from 'react-spinners';
+import { Section } from 'components/section/section';
 
 
 export const ContactList = () => {
@@ -27,7 +28,7 @@ export const ContactList = () => {
   return (
   
     <ul>
-
+   <Section title={'Contacts'} />
      {isLoading && !error ? (
      <CircleLoader/>
      ) : (

@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import "./MeniuBar.css"
+import AppBar from "components/appBar/appBar";
+import { useSelector } from "react-redux";
+import { getIsLoggedIn } from "../../redux/auth/selectors";
+import { UserMenu } from "components/userMenu/userMenu";
+import { FiAlignJustify } from "react-icons/fi";
 
 export const Link = styled(NavLink)`
   padding: 8px 16px;
@@ -21,6 +26,7 @@ export const Link = styled(NavLink)`
   }
 `;
 const MeniuBar = () =>{
+   const isLoggedIn = useSelector(getIsLoggedIn);
     
     return (
         <>
@@ -28,11 +34,11 @@ const MeniuBar = () =>{
         <nav className="meniu">
         <div className="left-bar"> 
          <h3 className="title">Phonebook</h3>
+  {/* <FiAlignJustify /> */}
          <Link  to="/">Home</Link>
         </div>
         <div className="right-bar">
-         <Link to="/register">Sing up</Link>
-         <Link to="/login">Log in</Link>
+       {isLoggedIn ? <UserMenu/> : <AppBar/>} 
         </div>
         
         

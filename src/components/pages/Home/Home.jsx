@@ -9,7 +9,7 @@ export default function Home() {
         <Link to="/register">Sing up</Link>
         <Link to="/login">Log in</Link>
         </div>
-        {/* <button class="custom-button">Apasă-mă</button> */}
+       
       </div>
     );
   }

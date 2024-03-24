@@ -1,4 +1,5 @@
 .page{
+    display: flex;
     justify-content:center;
   
     align-items: center;
@@ -17,4 +18,12 @@
                 0 -6px 4px #FEFEFE, 
                 inset 0 0 3px 3px #CECFD1;
 
+}
+@media (max-width: 300px){
+    .page{
+        height: 150vmax;
+       /* width: 90vw;
+       height: 100dvh; */
+     
+}
 }

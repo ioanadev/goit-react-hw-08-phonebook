@@ -19,3 +19,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@media (max-width: 800px){
+  body {
+    background-image: url(../public/kelly-sikkema-PUTcQQaCI_Q-unsplash.jpg);
+  }
+}
+@media (max-width: 400px){
+  body {
+    background-size: cover;
+  }
+}
