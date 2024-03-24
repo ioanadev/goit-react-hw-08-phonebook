@@ -1,16 +1,16 @@
 // import { useState } from "react";
 import "./Login.css"
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { logIn } from "../../../redux/auth/operations";
-import { getIsLoggedIn } from "../../../redux/auth/selectors";
-import { Route } from "react-router-dom";
-import Contacts from "../Contacts/Contacts";
+// import { getIsLoggedIn } from "../../../redux/auth/selectors";
+// import { Route } from "react-router-dom";
+// import Contacts from "../Contacts/Contacts";
 
 export default function Login() {
   // const [email, setEmail] = useState('');
   // const [password, setPassword] = useState('');
   const dispatch = useDispatch();
-  const isLoggedIn =useSelector(getIsLoggedIn);
+  // const isLoggedIn =useSelector(getIsLoggedIn);
 
   const handleSubmitLogIn = (e) =>{
     e.preventDefault();

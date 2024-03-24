@@ -5,7 +5,7 @@ import AppBar from "components/appBar/appBar";
 import { useSelector } from "react-redux";
 import { getIsLoggedIn } from "../../redux/auth/selectors";
 import { UserMenu } from "components/userMenu/userMenu";
-import { FiAlignJustify } from "react-icons/fi";
+// import { FiAlignJustify } from "react-icons/fi";
 
 export const Link = styled(NavLink)`
   padding: 8px 16px;
