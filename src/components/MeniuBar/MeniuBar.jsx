@@ -16,7 +16,8 @@ export const Link = styled(NavLink)`
   border-bottom: 1px solid rgba(51, 4, 4, 0.3);
   border-top: 1px solid rgba(51, 4, 4, 0.3);
   &:hover{
-    cursor: pointer;
+    border-bottom: 1px solid rgba(51, 4, 4, 0.8);
+    border-top: 1px solid rgba(51, 4, 4, 0.8);
   }
   
 

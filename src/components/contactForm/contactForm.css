@@ -14,14 +14,17 @@
   width: 300px;
   border-radius: 20px;
   margin-top: 2%;
+  border-bottom: 1px solid rgba(51, 4, 4, 0.8);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
 }
 .input:focus-visible {
-  /* outline-offset: 8px;
-  border: 2px solid slateblue;*/
-  outline: slateblue auto 1px;
+   outline: darkcyan auto 1px;
 }
 .input-search {
-  margin-left: 10px;
+  margin-left: 25px;
 }
 .label {
   display: flex;

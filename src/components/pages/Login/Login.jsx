@@ -1,10 +1,8 @@
-// import { useState } from "react";
+
 import "./Login.css"
 import { useDispatch} from "react-redux";
 import { logIn } from "../../../redux/auth/operations";
-// import { getIsLoggedIn } from "../../../redux/auth/selectors";
-// import { Route } from "react-router-dom";
-// import Contacts from "../Contacts/Contacts";
+import { motion } from "framer-motion";
 
 export default function Login() {
   // const [email, setEmail] = useState('');
@@ -29,40 +27,11 @@ export default function Login() {
   }
     return (
       <>
-       {/* {isLoggedIn ? (
-        <Contacts/>
-       ):(
-        <div className="login">
-        <title>Log in</title>
-       
-
-        <form className="formlogin" onSubmit={handleSubmitLogIn}> 
-           <h1 className="titlelogin" >Log in!</h1>
-            <label className="labellogin">Email:</label>
-            <br/>
-            <input 
-            className="inputlogin" 
-            placeholder="exemple@exemple.com" 
-            type = "email"
-            name = "email"
-            // value = {email}
-            />
-            <br/>
-            <label className="labellogin">Password:</label>
-            <br/>
-            <input 
-            className="inputlogin" 
-            placeholder="password" 
-            type="password"
-            name="password"
-            // value = {password}
-            />
-            <br/>
-          <button type="submit" className="buttonlogin">LOG IN</button>
-        </form>
-
-    </div>
-       )} */}
+     <motion.div
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ duration: 0.9 }}
+    >
       <div className="login">
         <title>Log in</title>
   
@@ -92,6 +61,7 @@ export default function Login() {
         </form>
 
     </div>
+    </motion.div>
     </>
      
     );

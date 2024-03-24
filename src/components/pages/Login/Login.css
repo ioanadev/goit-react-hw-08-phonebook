@@ -4,8 +4,16 @@
     width: 300px;
     border-radius: 20px;
     margin-top: 2%;
+    border-bottom: 1px solid rgba(51, 4, 4, 0.8);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
 
 }
+.inputlogin:focus-visible {
+   outline: darkcyan auto 1px;
+  }
 .formlogin{
 margin-top: 7%;
 
@@ -32,18 +40,12 @@ margin-top: 7%;
     margin-right: 35%;
     border-bottom: 1px solid rgba(51, 4, 4, 0.3);
     border-top: 1px solid rgba(51, 4, 4, 0.3);
-
-    /* box-shadow:
-    0 4px 3px 1px #FCFCFC, 
-    0 6px 8px #D6D7D9, 
-    0 -4px 4px #CECFD1, 
-    0 -6px 4px #FEFEFE, 
-    inset 0 0 3px 3px #CECFD1; */
-
+    cursor: pointer;
 }
 .buttonlogin:hover{
     color: white;
-    background-color: rgba(51, 4, 4, 0.896)
+    background-color: rgba(51, 4, 4, 0.896);
+
 }
 .labellogin{
     margin-left: 4%;

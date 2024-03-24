@@ -1,11 +1,19 @@
 .inputregister{
     padding: 7px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     width: 300px;
     border-radius: 20px;
     margin-top: 2%;
+    border-bottom: 1px solid rgba(51, 4, 4, 0.8);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    cursor: pointer;
 
 }
+.inputregister:focus-visible {
+    outline: darkcyan auto 1px;
+   }
 .formregister{
 margin-top: 7%;
 
@@ -31,13 +39,7 @@ margin-top: 7%;
     margin-right: 20%;
     border-bottom: 1px solid rgba(51, 4, 4, 0.3);
     border-top: 1px solid rgba(51, 4, 4, 0.3);
-
-    /* box-shadow:
-    0 4px 3px 1px #FCFCFC, 
-    0 6px 8px #D6D7D9, 
-    0 -4px 4px #CECFD1, 
-    0 -6px 4px #FEFEFE, 
-    inset 0 0 3px 3px #CECFD1; */
+    cursor: pointer;
 
 }
 .buttonregister:hover{
@@ -47,4 +49,8 @@ margin-top: 7%;
 .labelregister{
     margin-left: 4%;
     margin-bottom: 1%;
+}
+.p-s{
+    margin-top: 1px;
+    font-size:x-small;
 }
